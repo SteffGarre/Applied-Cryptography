@@ -15,7 +15,7 @@ AES encryption implemented for the course Applied Cryptography – DD2520
 * Each list contains 4 elements. Every element is an integer representing a byte (0-255).
 * 4 consecutive lists give us a 4x4 matrix representation of 16 bytes. In total, keys contain 44 lists, representing 11 matrices (the roundkeys according to AES 128 bit).
 
-**Algorithm:
+**Algorithm:**
   * Store the initial cipher key without modification in keys.
   * for i in range (0,40):
     * Grab the current last list in keys.
@@ -23,7 +23,7 @@ AES encryption implemented for the course Applied Cryptography – DD2520
       * Do RotWord()
       * Do SubWord()
       * Do Rcon
-   * xor the last list with the current i list
+    * xor the last list with the current i list
    
 When the loop is completed, keys should have 44 lists, the first 4 represents the original cipher key, the next 40 the derived round keys.
 return the list keys.
@@ -38,19 +38,19 @@ return the list keys.
  * shiftRows(): Shift rows in state accor. to an offset. No shift is done on row 0.
  * mixColumns(): Matrix multiplication using GF arithmetics.
 
-**Algorithm:
+**Algorithm:**
 * Store the initial plaintext (16 bytes) in the list state.
 * Do the initial round: call addRoundKey(state, round key 0)
 * Since we implement the 128 bit encryption of AES, we do 10 rounds.
 * for i in range (1,10):
- * subBytes(state)
- * shiftRows(state)
-* mixColumns(state)
-* addRoundKeys(state, round key i)
+  * subBytes(state)
+  * shiftRows(state)
+  * mixColumns(state)
+  * addRoundKeys(state, round key i)
 * Do the final round: 
- * subBytes(state)
- * shiftRows(state)
- * addRoundKeys(state, round key 10)
+  * subBytes(state)
+  * shiftRows(state)
+  * addRoundKeys(state, round key 10)
 * Write state to stdout to print the encrypted 16 bytes of plaintext
 
 
