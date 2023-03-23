@@ -1,4 +1,4 @@
-# AES 128 bit encryption 
+# AES 128-bit encryption 
 AES encryption implemented for the course Applied Cryptography – DD2520
 
 ## Quick rundown of the code implemented
