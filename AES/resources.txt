@@ -1,0 +1,12 @@
+Youtube:
+    Complete tutorial: https://www.youtube.com/watch?v=nC0mjaUZd8w&t=164s
+    Encryption: https://www.youtube.com/watch?v=5PHMbGr8eOA&t=377s
+    Key expansion: https://www.youtube.com/watch?v=w4aWIVhcUyo&t=1151s
+Github:
+    https://github.com/boppreh/aes/blob/master/aes.py
+    https://github.com/MaxDauber/tiny_aes
+AES documentation:
+    https://csrc.nist.gov/csrc/media/publications/fips/197/final/documents/fips-197.pdf
+    https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
+Python:
+    https://www.pythonmorsels.com/reading-binary-files-in-python/
