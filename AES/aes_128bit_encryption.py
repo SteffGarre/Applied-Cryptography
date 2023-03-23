@@ -214,7 +214,8 @@ def encrypt_128bit(plaintext, keys):
     subBytes(state)
     shiftRows(state)     
     addRoundKey(state, keys, index) 
-
+    
+    # flatten the list state, store it in result and print
     result = list(itertools.chain.from_iterable(state))
     sys.stdout.buffer.write(bytes(result))
     
