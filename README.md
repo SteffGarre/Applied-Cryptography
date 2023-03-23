@@ -1,2 +1,2 @@
 # Applied-Cryptography
-Applied Cryptographic
+Assignments for Applied Cryptographic DD2520 at KTH
